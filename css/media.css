@@ -1,0 +1,82 @@
+@media (max-width: 991px) {
+    .container{
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows: auto 1fr 1fr 1fr auto auto auto auto;
+        grid-template-areas:
+        "two two two two"
+        "one one one one"
+        "three three six six"
+        "four four four four"
+        "eight eight five five"
+        "seven seven five five"
+        "nine nine nine nine"
+        "ten ten ten ten"
+    }
+}
+@media (max-width: 740px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "two"
+        "one"
+        "three"
+        "six"
+        "four"
+        "eight"
+        "seven"
+        "five"
+        "nine"
+        "ten"
+    }
+    .one{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px 0;
+        overflow: hidden;
+    }
+    .one-content{
+        width: 100%;
+        padding-top: 0px;
+    }
+    .one-image{
+        width: 80%;
+        position: relative;
+        left: -50px;
+        bottom: -5px;
+        padding-top: 40px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .four{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px 40px;
+    }
+    .four-image{
+        width: 100%;
+    }
+    .four-image img{
+        width: 80%;
+        display: inline-block;
+        margin-top: 20px;
+        position: relative;
+        left: 50px;
+    }
+    .four-content{
+        width: 100%;
+        padding-top: 30px;
+    }
+    .nine h3{
+        font-size: 24px;
+    }
+    .ten{
+        flex-direction: column;
+    }
+    .ten img{
+        left: -50px;
+    }
+}
